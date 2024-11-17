@@ -5,13 +5,15 @@ import Footer from "@/components/footer";
 export default function BaseLayout(props: React.PropsWithChildren) {
   return (
     <>
-      <Navigation></Navigation>
+      <div className="grid min-h-screen grid-rows-[auto,1fr,auto]">
+        <Navigation></Navigation>
 
-      <main className="flex flex-col gap-4">
-        {props.children}
-      </main>
+        <main className="flex flex-col gap-4">
+          {props.children}
+        </main>
 
-      <Footer></Footer>
+        <Footer></Footer>
+      </div>
     </>
   );
 }
