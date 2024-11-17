@@ -8,8 +8,8 @@ export default function ProductList() {
   return (
     <BaseLayout>
       <div className="grid gap-4 grid-cols-2 justify-center items-center justify-items-center">
-        <ProductCard img={TopiImg} title="Topi"></ProductCard>
-        <ProductCard img={TasImg} title="Tas"></ProductCard>
+        <ProductCard link="/produk/1" img={TopiImg} title="Topi"></ProductCard>
+        <ProductCard link="/produk/1" img={TasImg} title="Tas"></ProductCard>
       </div>
     </BaseLayout>
   );
