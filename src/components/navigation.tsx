@@ -45,7 +45,7 @@ sm:py-4 md:py-0 duration-500 md:translate-x-0 `
           <NavigationLink to="/profile">Profile</NavigationLink>
           <NavigationLink to="/gallery">Gallery</NavigationLink>
           <NavigationLink to="/produk">Produk</NavigationLink>
-          <NavigationLink to="/blog">Blog</NavigationLink>
+          <NavigationLink to="/kegiatan">Blog</NavigationLink>
           <NavigationLink to="/kontak">Kontak</NavigationLink>
         </div>
         <div className="ml-auto gap-8 justify-center items-center sm:hidden md:flex">

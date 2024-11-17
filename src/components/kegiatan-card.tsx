@@ -15,7 +15,7 @@ export default function KegiatanCard(props: KegiatanCardProps) {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h1>{props.title}</h1>
+        <h1 className="text-2xl">{props.title}</h1>
 
         <p>{props.content}</p>
       </div>
