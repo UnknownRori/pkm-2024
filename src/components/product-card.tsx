@@ -1,4 +1,5 @@
 import Card from "@/shared/card";
+import { Link } from "react-router-dom";
 
 export type ProductCard = {
   img: string,
@@ -20,9 +21,9 @@ export default function ProductCard(props: ProductCard) {
         {(() => {
           if (props.link) {
             return (
-              <a href={props.link} className="bg-primary-600 py-2 px-12 flex justify-center items-center text-center text-white rounded">
+              <Link to={props.link} className="bg-primary-600 py-2 px-12 flex justify-center items-center text-center text-white rounded">
                 Beli
-              </a>
+              </Link>
             );
           }
           return (
