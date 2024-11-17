@@ -2,6 +2,8 @@ import Home from '@/pages/home';
 import Profile from './pages/profile';
 import NotFoundPage from './pages/not-found';
 import Gallery from './pages/gallery';
+import ProductList from './pages/product-list';
+import Kontak from './pages/kontak';
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <Gallery />
+  },
+  {
+    path: "/produk",
+    element: <ProductList />
+  },
+  {
+    path: "/kontak",
+    element: <Kontak />
   },
 
   {
