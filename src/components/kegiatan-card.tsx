@@ -11,7 +11,7 @@ export default function KegiatanCard(props: KegiatanCardProps) {
   return (
     <Card className="flex gap-4">
       <div>
-        <img src={props.img} alt={props.title} />
+        <img src={props.img} alt={props.title} className="rounded " />
       </div>
 
       <div className="flex flex-col gap-4">
