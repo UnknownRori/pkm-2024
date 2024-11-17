@@ -9,7 +9,7 @@ export default function ProductCard(props: ProductCard) {
   return (
 
     <Card className="flex flex-col gap-4">
-      <img src={props.img} alt="" />
+      <img src={props.img} alt="" className="rounded" />
       <h1 className="text-2xl text-center">{props.title}</h1>
       <div className="flex gap-4 justify-center items-center">
         <button className="bg-primary-600 py-2 px-12 flex justify-center items-center rounded">
