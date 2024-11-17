@@ -35,11 +35,14 @@ export default function Navigation() {
       </div>
       <div className={
         `flex  md:flex-row sm:flex-col sm:absolute md:relative flex-auto sm:bg-white  md:bg-transparent gap-12
-        sm:shadow md:shadow-none top-0 left-0 sm:w-full md:w-auto md:translate-y-0 sm:translate-y-16 sm:py-4 md:py-0 duration-500 md:translate-x-0 `
+        sm:shadow md:shadow-none top-0 left-0 sm:w-full md:w-auto md:translate-y-0 sm:translate-y-16 
+overflow-none
+sm:py-4 md:py-0 duration-500 md:translate-x-0 `
         + (!expanded ? `sm:translate-x-full` : `sm:translate-x-0`)
       }>
         <div className="flex justify-center items-center gap-4 sm:flex-col md:flex-row">
           <NavigationLink to="/">Home</NavigationLink>
+          <NavigationLink to="/profile">Profile</NavigationLink>
           <NavigationLink to="/gallery">Gallery</NavigationLink>
           <NavigationLink to="/produk">Produk</NavigationLink>
           <NavigationLink to="/blog">Blog</NavigationLink>
