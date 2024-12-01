@@ -28,9 +28,9 @@ export default function ProductCard(props: ProductCard) {
           }
           return (
 
-            <button className="bg-primary-600 py-2 px-12 flex justify-center items-center text-center text-white rounded">
+            <a href="https://wa.me/+6281567967356" className="bg-primary-600 py-2 px-12 flex justify-center items-center text-center text-white rounded">
               Beli
-            </button>
+            </a>
           );
         })()}
       </div>
