@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="flex lg:flex-row sm:flex-col gap-12">
           <ProductCard link="/produk/1" img={TopiImg} title="Topi"></ProductCard>
-          <ProductCard link="/produk/1" img={TasImg} title="Tas"></ProductCard>
+          <ProductCard link="/produk/2" img={TasImg} title="Tas"></ProductCard>
         </div>
       </section>
 
