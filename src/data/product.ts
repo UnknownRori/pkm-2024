@@ -1,11 +1,11 @@
 import TopiImg from "@/assets/topi.png";
 import TasImg from "@/assets/tas.png";
 
-export type Product Data = {
+export type ProductData = {
     id: string,
-        nama: string,
-            img: string,
-                deskripsi: string,
+    nama: string,
+    img: string,
+    deskripsi: string,
 };
 
 const data = [
