@@ -8,7 +8,8 @@ import ProductData from "@/data/product";
 
 export default function Product() {
   const params = useParams();
-  const data = ProductData[params.produkId - 1];
+  const productId = params.productId ? Number.parseInt(params.productId) : 1;
+  const data = ProductData[productId - 1];
   return (
     <BaseLayout>
       <div className="sm:px-4 md:px-12 py-4">
