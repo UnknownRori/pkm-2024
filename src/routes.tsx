@@ -9,6 +9,9 @@ import KegiatanList from './pages/kegiatan-list';
 
 import Dashboard from './pages/dashboard';
 import ProductDashboard from './pages/dashboard/product-dashboard';
+import UsersDashboard from './pages/dashboard/users-dashboard';
+import BlogDashboard from './pages/dashboard/blog-dashboard';
+import GaleriDashboard from './pages/dashboard/galeri-dashboard';
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -50,6 +53,21 @@ const router = createBrowserRouter([
   {
     path: "/dashboard/product",
     element: <ProductDashboard />
+  },
+
+  {
+    path: "/dashboard/users",
+    element: <UsersDashboard />
+  },
+
+  {
+    path: "/dashboard/blog",
+    element: <BlogDashboard />
+  },
+
+  {
+    path: "/dashboard/galeri",
+    element: <GaleriDashboard />
   },
 
   {
