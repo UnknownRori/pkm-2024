@@ -1,8 +1,9 @@
-import { useState } from "react";
+//import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 export default function DashboardLayout(props: React.PropsWithChildren) {
-  const sidebar = useState(false);
+  //const sidebar = useState(false);
 
   return (
     <div className="relative flex flex-row w-screen min-h-screen duration-500">
@@ -25,7 +26,7 @@ export default function DashboardLayout(props: React.PropsWithChildren) {
             </header>
 
             <div>
-              <button className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
+              <NavLink to="/dashboard" className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
                 <svg className="h-6 w-6 text-slate-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
                   stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" />
@@ -35,16 +36,16 @@ export default function DashboardLayout(props: React.PropsWithChildren) {
                   <rect x="14" y="14" width="6" height="6" rx="1" />
                 </svg>
                 Dashboard
-              </button>
+              </NavLink>
 
-              <button className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
+              <NavLink to="/dashboard/product" className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
                 <svg className="h-6 w-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
                 Produk
-              </button>
+              </NavLink>
 
-              <button className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
+              <NavLink to="/dashboard/users" className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
                 <svg className="h-6 w-6 group-hover:text-slate-200 duration-500 text-slate-500" width="24" height="24"
                   viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                   stroke-linejoin="round">
@@ -55,17 +56,17 @@ export default function DashboardLayout(props: React.PropsWithChildren) {
                   <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
                 </svg>
                 Users
-              </button>
+              </NavLink>
 
-              <button className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
+              <NavLink to="/dashboard/blog" className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
                 <svg className="h-6 w-6 text-slate-600" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />  <line x1="13" y1="8" x2="15" y2="8" />  <line x1="13" y1="12" x2="15" y2="12" /></svg>
                 Blog
-              </button>
+              </NavLink>
 
-              <button className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
+              <NavLink to="/dashboard/galeri" className="flex gap-2 hover:bg-slate-600 py-2 px-2 duration-500 rounded w-full">
                 <svg className="h-6 w-6 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />  <circle cx="8.5" cy="8.5" r="1.5" />  <polyline points="21 15 16 10 5 21" /></svg>
                 Galeri
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>
